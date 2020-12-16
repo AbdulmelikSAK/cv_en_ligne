@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-end
+  get '/projets',to: 'pages#projets'
+  get '/formations',to: 'pages#formations'
+  get '/truc',to: 'pages#truc'
+  end
