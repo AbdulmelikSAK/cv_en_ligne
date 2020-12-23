@@ -3,7 +3,12 @@
     <div class="pr-4">
       <a href="/"><%= image_tag "melik.jpg", alt: "melik", class: 'w-12 rounded-full' %></a>
     </div>
-    <h3 class="font-bold text-xl text-gray-900">Abdulmelik SAK</h3>
+    <h3 class="font-bold text-2xl text-gray-900">Abdulmelik SAK</h3>
+    <div class ="hidden md:block pl-16 space-x-5">
+      <%= link_to 'CV', cv_path, class: 'font-semibold text-gray-900 hover:text-gray-500' %>
+      <%= link_to 'FORMATIONS', formations_path, class: 'font-semibold text-gray-900 hover:text-gray-500'  %>
+      <%= link_to 'PROJETS', projets_path, class: 'font-semibold text-gray-900 hover:text-gray-500' %>
+    </div>
   </div>
   <button id="menu_btn">
     <div class="md:hidden">
@@ -16,11 +21,8 @@
 
 <div class="menu hidden md:hidden">
   <div class="mt-8 ml-8 space-y-8 flex flex-col">
-      <%= link_to 'CV', cv_path %>
-      <%= link_to 'FORMATIONS', formations_path  %>
-      <%= link_to 'PROJETS', projets_path %>
-      <%= link_to 'LINKEDIN', "https://www.linkedin.com/in/abdulmelik-sak/" , target: "_blank" %>
-      <%= link_to 'GITHUB', "https://github.com/AbdulmelikSAK", target: "_blank" %>
-      <%= link_to 'CODEWARS', "https://www.codewars.com/users/AbdulmelikSAK", target: "_blank" %>
+      <%= link_to 'CV', cv_path, class: 'font-semibold text-gray-900' %>
+      <%= link_to 'FORMATIONS', formations_path, class: 'font-semibold text-gray-900'  %>
+      <%= link_to 'PROJETS', projets_path, class: 'font-semibold text-gray-900' %>
   </div>
 </div>
